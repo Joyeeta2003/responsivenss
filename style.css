@@ -10,19 +10,605 @@ body {
   width: 100%;
 }
 
+@font-face {
+  font-family: font1;
+  src: url(./Chillax-Regular.otf);
+}
+@font-face {
+  font-family: font2;
+  src: url(./Satoshi-Regular.otf);
+}
 main {
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 main .view1 {
   width: 100%;
   display: flex;
   flex-direction: column;
+  padding: 2rem;
+  gap: 1rem;
 }
 main .view1 .top {
   width: 100%;
 }
 main .view1 .top img {
   width: 100%;
+  border-radius: 20px;
+}
+main .view1 .bottom {
+  background-color: rgba(31, 30, 30, 0.427);
+  padding: 2rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .view1 .bottom .title {
+  font-family: font2;
+  font-size: 0.8rem;
+  padding-bottom: 8rem;
+}
+main .view1 .bottom .text .textUppercase {
+  font-size: 35px;
+  text-transform: uppercase;
+  line-height: 2.9rem;
+  font-family: font1;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+main .view1 .bottom .text p {
+  line-height: 2rem;
+  font-size: 20px;
+  font-family: font2;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+main .view1 .bottom .text .lastPart {
+  display: flex;
+  padding: 10px;
+  gap: 15px;
+  align-items: center;
+}
+main .view1 .bottom .text .lastPart .downArray {
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 50%;
+}
+main .view1 .bottom .text .lastPart .textMeta {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: font2;
+}
+main .view2 {
+  background-color: black;
+}
+main .view2 .top,
+main .view2 .bottom {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-around;
+  align-content: center;
+}
+main .view2 .top .box,
+main .view2 .bottom .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  flex-direction: column;
+  font-family: font2;
+}
+main .view2 .top .box .para,
+main .view2 .bottom .box .para {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+main .view2 .top .box h2,
+main .view2 .bottom .box h2 {
+  font-size: 3rem;
+  font-weight: 400px;
+}
+main .view3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  gap: 1rem;
+}
+main .view3 .top {
+  width: 100%;
+}
+main .view3 .top img {
+  width: 100%;
+  border-radius: 20px;
+}
+main .view3 .bottom {
+  background-color: rgba(31, 30, 30, 0.427);
+  padding: 2rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .view3 .bottom .title {
+  font-family: font2;
+  padding-bottom: 8rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+main .view3 .bottom .text .textUppercase {
+  font-size: 35px;
+  text-transform: uppercase;
+  line-height: 2.9rem;
+  font-family: font1;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+main .view3 .bottom .text p {
+  line-height: 2rem;
+  font-size: 1.25rem;
+  font-family: font2;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+main .view4 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  gap: 1rem;
+}
+main .view4 .top {
+  width: 100%;
+}
+main .view4 .top img {
+  width: 100%;
+  border-radius: 20px;
+}
+main .view4 .bottom {
+  background-color: rgba(31, 30, 30, 0.427);
+  padding: 2rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .view4 .bottom .title {
+  font-family: font2;
+  padding-bottom: 8rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+main .view4 .bottom .text .textUppercase {
+  font-size: 35px;
+  text-transform: uppercase;
+  line-height: 2.9rem;
+  font-family: font1;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+main .view4 .bottom .text p {
+  line-height: 2rem;
+  font-size: 1.25rem;
+  font-family: font2;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+main .view5 {
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .view5 .team {
+  padding: 0 2rem;
+}
+main .view5 .team h2 {
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  font-family: font1;
+  font-weight: 300px;
+}
+main .view5 .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+main .view5 .right div i {
+  padding: 0.7rem;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+main .view6 .img {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+main .view6 .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+main .view6 .img .logos {
+  position: absolute;
+  left: 80%;
+  top: 8%;
+  display: flex;
+  gap: 10px;
+}
+main .view6 .img .logos .logo {
+  padding: 1rem;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+main .view6 .img .bottomPart {
+  position: absolute;
+  bottom: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  border: 1px solid white;
+  width: 90%;
+  right: 5%;
+  background-color: rgba(121, 114, 114, 0.555);
+  border-radius: 20px;
+}
+main .view6 .img .bottomPart .name {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-family: font2;
+}
+main .view7 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  gap: 1rem;
+}
+main .view7 .top {
+  width: 100%;
+}
+main .view7 .top img {
+  width: 100%;
+  border-radius: 20px;
+}
+main .view7 .bottom {
+  border: 1px solid white;
+  background-color: rgba(31, 30, 30, 0.427);
+  border-radius: 20px;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .view7 .bottom .left {
+  padding-bottom: 4rem;
+}
+main .view7 .bottom .left .name {
+  text-transform: uppercase;
+  font-family: font1;
+  font-size: 1.5rem;
+  color: rgb(184, 183, 183);
+  padding: 0.5rem 0;
+}
+main .view7 .bottom .left .textUppercase {
+  text-transform: uppercase;
+  font-family: font1;
+  font-size: 2.5rem;
+}
+main .view7 .bottom .right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+main .view7 .bottom .right div {
+  padding: 0.8rem;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+main .view8 {
+  padding: 1rem 2rem;
+}
+main .view8 .container {
+  padding: 1rem 2rem;
+  background-color: rgb(184, 148, 31);
+  border-radius: 20px;
+}
+main .view8 .container .top p {
+  font-family: font1;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+main .view8 .container .top .textUppercase {
+  text-transform: uppercase;
+  font-family: font2;
+  font-size: 4rem;
+  font-weight: 300;
+  padding-bottom: 1.5rem;
+}
+main .view8 .container .btn {
+  width: 100%;
+  background-color: black;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  gap: 1rem;
+}
+main .view8 .container .btn div {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-family: font2;
+}
+main .view9 {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .view9 .left {
+  border: 1px solid white;
+  padding: 1rem 2rem;
+  background-color: rgba(31, 30, 30, 0.427);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8rem;
+}
+main .view9 .left .titleName {
+  font-family: font1;
+  font-size: 1.5rem;
+}
+main .view9 .left .logos {
+  display: flex;
+  gap: 1rem;
+}
+main .view9 .left .logos .logo {
+  padding: 1rem;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+main .view9 .rightTop {
+  border: 1px solid white;
+  padding: 1rem 2rem;
+  background-color: rgba(31, 30, 30, 0.427);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main .view9 .rightTop .row1 .pages .name {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-family: font1;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+main .view9 .rightTop .row h2 {
+  text-transform: uppercase;
+  font-family: font1;
+  line-height: 3rem;
+  font-weight: 300;
+  font-size: 1rem;
+}
+main .view9 .rightTop .row button {
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: rgb(228, 207, 134);
+}
+main .view9 .bottom {
+  border: 1px solid white;
+  padding: 1rem 2rem;
+  background-color: rgba(31, 30, 30, 0.427);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .view9 .bottom .bottomLeft {
+  display: flex;
+  font-family: font2;
+  font-size: 1.2rem;
+}
+main .view9 .bottom .right {
+  display: flex;
+  font-family: font2;
+  gap: 1rem;
+  align-items: center;
+}
+main .view9 .bottom .right h2 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+main .view9 .bottom .right .btn {
+  padding: 1rem;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+@media (min-width: 900px) {
+  main .view1 {
+    flex-direction: row;
+  }
+  main .view1 .top,
+  main .view1 .bottom {
+    width: 50%;
+  }
+  main .view1 .top img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .view1 .bottom {
+    justify-content: space-between;
+    padding: 2rem;
+  }
+  main .view1 .bottom h3 {
+    padding-bottom: 6rem;
+  }
+  main .view1 .bottom h2 {
+    font-size: 1.5rem;
+  }
+  main .view2 {
+    display: flex;
+  }
+  main .view2 .top,
+  main .view2 .bottom {
+    width: 50%;
+  }
+  main .view3 {
+    flex-direction: row-reverse;
+  }
+  main .view3 .top,
+  main .view3 .bottom {
+    width: 50%;
+  }
+  main .view3 .top img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .view3 .bottom {
+    justify-content: space-between;
+    padding: 2rem;
+  }
+  main .view3 .bottom .text {
+    display: flex;
+    flex-direction: column;
+  }
+  main .view3 .bottom .text .para {
+    display: flex;
+    gap: 1.5rem;
+  }
+  main .view4 {
+    flex-direction: row;
+  }
+  main .view4 .top,
+  main .view4 .bottom {
+    width: 50%;
+  }
+  main .view4 .top img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .view4 .bottom {
+    justify-content: space-between;
+    padding: 2rem;
+  }
+  main .view4 .bottom .text {
+    display: flex;
+    flex-direction: column;
+  }
+  main .view4 .bottom .text .para {
+    display: flex;
+    gap: 1.5rem;
+  }
+  main .view6 {
+    display: flex;
+    gap: 1.5rem;
+  }
+  main .view6 .img {
+    width: 33.33%;
+    padding: 0;
+    position: relative;
+  }
+  main .view6 .img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .view6 .img .logos {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    left: auto;
+    display: flex;
+    gap: 10px;
+  }
+  main .view6 .img .logos .logo {
+    padding: 0.6rem;
+    border: 1px solid white;
+    border-radius: 50%;
+  }
+  main .view6 .img .bottomPart {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 12px 18px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    width: auto;
+    max-width: 80%;
+  }
+  main .view7 {
+    display: flex;
+    flex-direction: row;
+  }
+  main .view7 .top,
+  main .view7 .bottom {
+    width: 50%;
+  }
+  main .view7 .top img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .view8 .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  main .view8 .container .top {
+    width: 80%;
+  }
+  main .view8 .container .btn {
+    width: 25%;
+  }
+  main .view8 .container .btn {
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: absolute;
+    bottom: 5%;
+    right: 2%;
+  }
+  main .view9 {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 3fr 1fr;
+    grid-template-areas: "left rightTop" "left bottom";
+  }
+  main .view9 .left {
+    grid-area: left;
+  }
+  main .view9 .rightTop {
+    grid-area: rightTop;
+  }
+  main .view9 .bottom {
+    grid-area: bottom;
+  }
 }/*# sourceMappingURL=style.css.map */
